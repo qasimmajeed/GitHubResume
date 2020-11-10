@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD112A3C2389DB6600E49CA2 /* GitHubResumeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */; };
+		FDF0D454238676D1002854DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D453238676D1002854DB /* AppDelegate.swift */; };
+		FDF0D45B238676D1002854DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D459238676D1002854DB /* Main.storyboard */; };
+		FDF0D45D238676D3002854DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D45C238676D3002854DB /* Assets.xcassets */; };
+		FDF0D460238676D3002854DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D45E238676D3002854DB /* LaunchScreen.storyboard */; };
+		FDF0D46B238676D3002854DB /* GitHub_ResumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D46A238676D3002854DB /* GitHub_ResumeTests.swift */; };
+		FDF0D47C23867756002854DB /* WebServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D47623867756002854DB /* WebServiceApi.swift */; };
+		FDF0D47D23867756002854DB /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D47723867756002854DB /* HttpMethod.swift */; };
+		FDF0D47E23867756002854DB /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D47823867756002854DB /* NetworkApi.swift */; };
+		FDF0D47F23867756002854DB /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D47923867756002854DB /* NetworkRequest.swift */; };
+		FDF0D48023867756002854DB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D47A23867756002854DB /* NetworkError.swift */; };
+		FDF0D48123867756002854DB /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D47B23867756002854DB /* NetworkConfig.swift */; };
+		FDF0D486238677EC002854DB /* UserRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D485238677EC002854DB /* UserRemoteRepository.swift */; };
+		FDF0D48A23867C8E002854DB /* UserBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D48923867C8E002854DB /* UserBO.swift */; };
+		FDF0D48C2386A0C5002854DB /* BaseBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D48B2386A0C5002854DB /* BaseBO.swift */; };
+		FDF0D4912386ABA1002854DB /* RepositoryBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4902386ABA1002854DB /* RepositoryBO.swift */; };
+		FDF0D4932386F6EF002854DB /* RepoRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4922386F6EF002854DB /* RepoRemoteRepository.swift */; };
+		FDF0D495238704B4002854DB /* OrganizationBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D494238704B4002854DB /* OrganizationBO.swift */; };
+		FDF0D497238704DB002854DB /* OrganizationRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D496238704DB002854DB /* OrganizationRemoteRepository.swift */; };
+		FDF0D49A238708CE002854DB /* ResumeViewerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D499238708CE002854DB /* ResumeViewerWorker.swift */; };
+		FDF0D49C23870989002854DB /* ResumeBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D49B23870989002854DB /* ResumeBO.swift */; };
+		FDF0D49F23870FBD002854DB /* ResumeViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D49E23870FBD002854DB /* ResumeViewerInteractor.swift */; };
+		FDF0D4A223871151002854DB /* ResumeViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4A123871151002854DB /* ResumeViewerPresenter.swift */; };
+		FDF0D4A7238716F3002854DB /* GitHubResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4A6238716F3002854DB /* GitHubResumeViewController.swift */; };
+		FDF0D4A9238717C5002854DB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4A8238717C5002854DB /* UIViewController+Extension.swift */; };
+		FDF0D4AB238717FE002854DB /* ResumeViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4AA238717FE002854DB /* ResumeViewerViewController.swift */; };
+		FDF0D4AE238736FF002854DB /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4AD238736FF002854DB /* UserInfoTableViewCell.swift */; };
+		FDF0D4B023873C16002854DB /* ResumeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4AF23873C16002854DB /* ResumeTableViewHeader.swift */; };
+		FDF0D4B223873CAB002854DB /* ResumeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D4B123873CAB002854DB /* ResumeTableViewHeader.xib */; };
+		FDF0D4B423873E6A002854DB /* ProfileUITableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4B323873E6A002854DB /* ProfileUITableVIewCell.swift */; };
+		FDF0D4B82387436C002854DB /* RepositoryUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4B72387436C002854DB /* RepositoryUITableViewCell.swift */; };
+		FDF0D4BB23895B94002854DB /* ResumeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4BA23895B94002854DB /* ResumeViewModel.swift */; };
+		FDF0D4BD2389603A002854DB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4BC2389603A002854DB /* Date+Extension.swift */; };
+		FDF0D4BF238964F1002854DB /* WebSiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4BE238964F1002854DB /* WebSiteTableViewCell.swift */; };
+		FDF0D4C12389682B002854DB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4C02389682B002854DB /* String+Extension.swift */; };
+		FDF0D4C32389B5FB002854DB /* OrganizationUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4C22389B5FB002854DB /* OrganizationUITableViewCell.swift */; };
+		FDF0D4C52389BD9D002854DB /* LanguageUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4C42389BD9D002854DB /* LanguageUITableViewCell.swift */; };
+		FDF0D4C82389CB08002854DB /* ResumeViewerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D4C72389CB08002854DB /* ResumeViewerRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDF0D467238676D3002854DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF0D448238676D1002854DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF0D44F238676D1002854DB;
+			remoteInfo = "GitHub Resume";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubResumeRouter.swift; sourceTree = "<group>"; };
+		FDF0D450238676D1002854DB /* GitHub Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF0D453238676D1002854DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDF0D45A238676D1002854DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDF0D45C238676D3002854DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDF0D45F238676D3002854DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDF0D461238676D3002854DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF0D466238676D3002854DB /* GitHub ResumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitHub ResumeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF0D46A238676D3002854DB /* GitHub_ResumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_ResumeTests.swift; sourceTree = "<group>"; };
+		FDF0D46C238676D3002854DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF0D47623867756002854DB /* WebServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceApi.swift; sourceTree = "<group>"; };
+		FDF0D47723867756002854DB /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		FDF0D47823867756002854DB /* NetworkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
+		FDF0D47923867756002854DB /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		FDF0D47A23867756002854DB /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FDF0D47B23867756002854DB /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		FDF0D485238677EC002854DB /* UserRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteRepository.swift; sourceTree = "<group>"; };
+		FDF0D48923867C8E002854DB /* UserBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBO.swift; sourceTree = "<group>"; };
+		FDF0D48B2386A0C5002854DB /* BaseBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBO.swift; sourceTree = "<group>"; };
+		FDF0D4902386ABA1002854DB /* RepositoryBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryBO.swift; sourceTree = "<group>"; };
+		FDF0D4922386F6EF002854DB /* RepoRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRemoteRepository.swift; sourceTree = "<group>"; };
+		FDF0D494238704B4002854DB /* OrganizationBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationBO.swift; sourceTree = "<group>"; };
+		FDF0D496238704DB002854DB /* OrganizationRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationRemoteRepository.swift; sourceTree = "<group>"; };
+		FDF0D499238708CE002854DB /* ResumeViewerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewerWorker.swift; sourceTree = "<group>"; };
+		FDF0D49B23870989002854DB /* ResumeBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBO.swift; sourceTree = "<group>"; };
+		FDF0D49E23870FBD002854DB /* ResumeViewerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewerInteractor.swift; sourceTree = "<group>"; };
+		FDF0D4A123871151002854DB /* ResumeViewerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewerPresenter.swift; sourceTree = "<group>"; };
+		FDF0D4A6238716F3002854DB /* GitHubResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubResumeViewController.swift; sourceTree = "<group>"; };
+		FDF0D4A8238717C5002854DB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FDF0D4AA238717FE002854DB /* ResumeViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewerViewController.swift; sourceTree = "<group>"; };
+		FDF0D4AD238736FF002854DB /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		FDF0D4AF23873C16002854DB /* ResumeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTableViewHeader.swift; sourceTree = "<group>"; };
+		FDF0D4B123873CAB002854DB /* ResumeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumeTableViewHeader.xib; sourceTree = "<group>"; };
+		FDF0D4B323873E6A002854DB /* ProfileUITableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUITableVIewCell.swift; sourceTree = "<group>"; };
+		FDF0D4B72387436C002854DB /* RepositoryUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryUITableViewCell.swift; sourceTree = "<group>"; };
+		FDF0D4BA23895B94002854DB /* ResumeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewModel.swift; sourceTree = "<group>"; };
+		FDF0D4BC2389603A002854DB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FDF0D4BE238964F1002854DB /* WebSiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteTableViewCell.swift; sourceTree = "<group>"; };
+		FDF0D4C02389682B002854DB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FDF0D4C22389B5FB002854DB /* OrganizationUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationUITableViewCell.swift; sourceTree = "<group>"; };
+		FDF0D4C42389BD9D002854DB /* LanguageUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageUITableViewCell.swift; sourceTree = "<group>"; };
+		FDF0D4C72389CB08002854DB /* ResumeViewerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewerRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDF0D44D238676D1002854DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF0D463238676D3002854DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDF0D447238676D1002854DB = {
+			isa = PBXGroup;
+			children = (
+				FDF0D452238676D1002854DB /* GitHub Resume */,
+				FDF0D469238676D3002854DB /* GitHub ResumeTests */,
+				FDF0D451238676D1002854DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDF0D451238676D1002854DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D450238676D1002854DB /* GitHub Resume.app */,
+				FDF0D466238676D3002854DB /* GitHub ResumeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDF0D452238676D1002854DB /* GitHub Resume */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D453238676D1002854DB /* AppDelegate.swift */,
+				FDF0D48723867C75002854DB /* Model */,
+				FDF0D48223867797002854DB /* Repository */,
+				FDF0D4982387089A002854DB /* Worker */,
+				FDF0D49D23870FA7002854DB /* Interactor */,
+				FDF0D4A023871136002854DB /* Presenter */,
+				FDF0D4C62389CAE4002854DB /* Router */,
+				FDF0D4AC238736E5002854DB /* VIews */,
+				FDF0D4A32387159B002854DB /* ViewControllers */,
+				FDF0D48D2386AA3F002854DB /* Extension */,
+				FDF0D47523867756002854DB /* NetworkApi */,
+				FDF0D459238676D1002854DB /* Main.storyboard */,
+				FDF0D45C238676D3002854DB /* Assets.xcassets */,
+				FDF0D45E238676D3002854DB /* LaunchScreen.storyboard */,
+				FDF0D461238676D3002854DB /* Info.plist */,
+			);
+			path = "GitHub Resume";
+			sourceTree = "<group>";
+		};
+		FDF0D469238676D3002854DB /* GitHub ResumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D46A238676D3002854DB /* GitHub_ResumeTests.swift */,
+				FDF0D46C238676D3002854DB /* Info.plist */,
+			);
+			path = "GitHub ResumeTests";
+			sourceTree = "<group>";
+		};
+		FDF0D47523867756002854DB /* NetworkApi */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D47623867756002854DB /* WebServiceApi.swift */,
+				FDF0D47723867756002854DB /* HttpMethod.swift */,
+				FDF0D47823867756002854DB /* NetworkApi.swift */,
+				FDF0D47923867756002854DB /* NetworkRequest.swift */,
+				FDF0D47A23867756002854DB /* NetworkError.swift */,
+				FDF0D47B23867756002854DB /* NetworkConfig.swift */,
+			);
+			path = NetworkApi;
+			sourceTree = "<group>";
+		};
+		FDF0D48223867797002854DB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D484238677C0002854DB /* Remote */,
+				FDF0D483238677B8002854DB /* Local */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FDF0D483238677B8002854DB /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		FDF0D484238677C0002854DB /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D485238677EC002854DB /* UserRemoteRepository.swift */,
+				FDF0D4922386F6EF002854DB /* RepoRemoteRepository.swift */,
+				FDF0D496238704DB002854DB /* OrganizationRemoteRepository.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		FDF0D48723867C75002854DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4B923895B7E002854DB /* ViewModels */,
+				FDF0D48823867C7D002854DB /* BO */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDF0D48823867C7D002854DB /* BO */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D48B2386A0C5002854DB /* BaseBO.swift */,
+				FDF0D48923867C8E002854DB /* UserBO.swift */,
+				FDF0D4902386ABA1002854DB /* RepositoryBO.swift */,
+				FDF0D494238704B4002854DB /* OrganizationBO.swift */,
+				FDF0D49B23870989002854DB /* ResumeBO.swift */,
+			);
+			path = BO;
+			sourceTree = "<group>";
+		};
+		FDF0D48D2386AA3F002854DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4A8238717C5002854DB /* UIViewController+Extension.swift */,
+				FDF0D4BC2389603A002854DB /* Date+Extension.swift */,
+				FDF0D4C02389682B002854DB /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FDF0D4982387089A002854DB /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D499238708CE002854DB /* ResumeViewerWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		FDF0D49D23870FA7002854DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D49E23870FBD002854DB /* ResumeViewerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FDF0D4A023871136002854DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4A123871151002854DB /* ResumeViewerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FDF0D4A32387159B002854DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4A6238716F3002854DB /* GitHubResumeViewController.swift */,
+				FDF0D4AA238717FE002854DB /* ResumeViewerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDF0D4AC238736E5002854DB /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4AD238736FF002854DB /* UserInfoTableViewCell.swift */,
+				FDF0D4C42389BD9D002854DB /* LanguageUITableViewCell.swift */,
+				FDF0D4B72387436C002854DB /* RepositoryUITableViewCell.swift */,
+				FDF0D4C22389B5FB002854DB /* OrganizationUITableViewCell.swift */,
+				FDF0D4B323873E6A002854DB /* ProfileUITableVIewCell.swift */,
+				FDF0D4BE238964F1002854DB /* WebSiteTableViewCell.swift */,
+				FDF0D4AF23873C16002854DB /* ResumeTableViewHeader.swift */,
+				FDF0D4B123873CAB002854DB /* ResumeTableViewHeader.xib */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		FDF0D4B923895B7E002854DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4BA23895B94002854DB /* ResumeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FDF0D4C62389CAE4002854DB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FDF0D4C72389CB08002854DB /* ResumeViewerRouter.swift */,
+				FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDF0D44F238676D1002854DB /* GitHub Resume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF0D46F238676D3002854DB /* Build configuration list for PBXNativeTarget "GitHub Resume" */;
+			buildPhases = (
+				FDF0D44C238676D1002854DB /* Sources */,
+				FDF0D44D238676D1002854DB /* Frameworks */,
+				FDF0D44E238676D1002854DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GitHub Resume";
+			productName = "GitHub Resume";
+			productReference = FDF0D450238676D1002854DB /* GitHub Resume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDF0D465238676D3002854DB /* GitHub ResumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF0D472238676D3002854DB /* Build configuration list for PBXNativeTarget "GitHub ResumeTests" */;
+			buildPhases = (
+				FDF0D462238676D3002854DB /* Sources */,
+				FDF0D463238676D3002854DB /* Frameworks */,
+				FDF0D464238676D3002854DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF0D468238676D3002854DB /* PBXTargetDependency */,
+			);
+			name = "GitHub ResumeTests";
+			productName = "GitHub ResumeTests";
+			productReference = FDF0D466238676D3002854DB /* GitHub ResumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDF0D448238676D1002854DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Lambda Tech";
+				TargetAttributes = {
+					FDF0D44F238676D1002854DB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					FDF0D465238676D3002854DB = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FDF0D44F238676D1002854DB;
+					};
+				};
+			};
+			buildConfigurationList = FDF0D44B238676D1002854DB /* Build configuration list for PBXProject "GitHub Resume" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDF0D447238676D1002854DB;
+			productRefGroup = FDF0D451238676D1002854DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDF0D44F238676D1002854DB /* GitHub Resume */,
+				FDF0D465238676D3002854DB /* GitHub ResumeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDF0D44E238676D1002854DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF0D460238676D3002854DB /* LaunchScreen.storyboard in Resources */,
+				FDF0D45D238676D3002854DB /* Assets.xcassets in Resources */,
+				FDF0D45B238676D1002854DB /* Main.storyboard in Resources */,
+				FDF0D4B223873CAB002854DB /* ResumeTableViewHeader.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF0D464238676D3002854DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDF0D44C238676D1002854DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF0D4BB23895B94002854DB /* ResumeViewModel.swift in Sources */,
+				FDF0D4AE238736FF002854DB /* UserInfoTableViewCell.swift in Sources */,
+				FDF0D48A23867C8E002854DB /* UserBO.swift in Sources */,
+				FDF0D47F23867756002854DB /* NetworkRequest.swift in Sources */,
+				FDF0D4B023873C16002854DB /* ResumeTableViewHeader.swift in Sources */,
+				FDF0D49A238708CE002854DB /* ResumeViewerWorker.swift in Sources */,
+				FDF0D48023867756002854DB /* NetworkError.swift in Sources */,
+				FDF0D48C2386A0C5002854DB /* BaseBO.swift in Sources */,
+				FDF0D495238704B4002854DB /* OrganizationBO.swift in Sources */,
+				FDF0D4A7238716F3002854DB /* GitHubResumeViewController.swift in Sources */,
+				FDF0D49C23870989002854DB /* ResumeBO.swift in Sources */,
+				FDF0D454238676D1002854DB /* AppDelegate.swift in Sources */,
+				FDF0D4C52389BD9D002854DB /* LanguageUITableViewCell.swift in Sources */,
+				FDF0D4B423873E6A002854DB /* ProfileUITableVIewCell.swift in Sources */,
+				FDF0D49F23870FBD002854DB /* ResumeViewerInteractor.swift in Sources */,
+				FDF0D4BF238964F1002854DB /* WebSiteTableViewCell.swift in Sources */,
+				FDF0D4AB238717FE002854DB /* ResumeViewerViewController.swift in Sources */,
+				FDF0D47D23867756002854DB /* HttpMethod.swift in Sources */,
+				FDF0D4B82387436C002854DB /* RepositoryUITableViewCell.swift in Sources */,
+				FDF0D4C32389B5FB002854DB /* OrganizationUITableViewCell.swift in Sources */,
+				FDF0D47E23867756002854DB /* NetworkApi.swift in Sources */,
+				FDF0D486238677EC002854DB /* UserRemoteRepository.swift in Sources */,
+				FDF0D47C23867756002854DB /* WebServiceApi.swift in Sources */,
+				FDF0D4C82389CB08002854DB /* ResumeViewerRouter.swift in Sources */,
+				FDF0D4912386ABA1002854DB /* RepositoryBO.swift in Sources */,
+				FDF0D4932386F6EF002854DB /* RepoRemoteRepository.swift in Sources */,
+				FDF0D4A223871151002854DB /* ResumeViewerPresenter.swift in Sources */,
+				FD112A3C2389DB6600E49CA2 /* GitHubResumeRouter.swift in Sources */,
+				FDF0D4A9238717C5002854DB /* UIViewController+Extension.swift in Sources */,
+				FDF0D4BD2389603A002854DB /* Date+Extension.swift in Sources */,
+				FDF0D497238704DB002854DB /* OrganizationRemoteRepository.swift in Sources */,
+				FDF0D4C12389682B002854DB /* String+Extension.swift in Sources */,
+				FDF0D48123867756002854DB /* NetworkConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF0D462238676D3002854DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF0D46B238676D3002854DB /* GitHub_ResumeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDF0D468238676D3002854DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF0D44F238676D1002854DB /* GitHub Resume */;
+			targetProxy = FDF0D467238676D3002854DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDF0D459238676D1002854DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDF0D45A238676D1002854DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDF0D45E238676D3002854DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDF0D45F238676D3002854DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDF0D46D238676D3002854DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDF0D46E238676D3002854DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDF0D470238676D3002854DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J43DUNNNU5;
+				INFOPLIST_FILE = "GitHub Resume/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdatech.githubresume.GitHub-Resume";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FDF0D471238676D3002854DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J43DUNNNU5;
+				INFOPLIST_FILE = "GitHub Resume/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdatech.githubresume.GitHub-Resume";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FDF0D473238676D3002854DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J43DUNNNU5;
+				INFOPLIST_FILE = "GitHub ResumeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdatech.githubresume.GitHub-ResumeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub Resume.app/GitHub Resume";
+			};
+			name = Debug;
+		};
+		FDF0D474238676D3002854DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J43DUNNNU5;
+				INFOPLIST_FILE = "GitHub ResumeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdatech.githubresume.GitHub-ResumeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub Resume.app/GitHub Resume";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDF0D44B238676D1002854DB /* Build configuration list for PBXProject "GitHub Resume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF0D46D238676D3002854DB /* Debug */,
+				FDF0D46E238676D3002854DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF0D46F238676D3002854DB /* Build configuration list for PBXNativeTarget "GitHub Resume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF0D470238676D3002854DB /* Debug */,
+				FDF0D471238676D3002854DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF0D472238676D3002854DB /* Build configuration list for PBXNativeTarget "GitHub ResumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF0D473238676D3002854DB /* Debug */,
+				FDF0D474238676D3002854DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDF0D448238676D1002854DB /* Project object */;
+}
