@@ -4,6 +4,6 @@
 
  This project demonstrate Clean Architecture(VIPER) 
 
-## Authors
+## Author
 
 * **Muhammad Qasim Majeed** 
