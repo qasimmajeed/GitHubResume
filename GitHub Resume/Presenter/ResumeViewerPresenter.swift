@@ -12,10 +12,10 @@ protocol ResumeViewerPresenterLogic
 {
     func presentResumeData(resume : ResumeBO)
     func presentError(error : NetworkError)
+    func presentNavigationTitle(resume: ResumeBO, isDisplay : Bool) -> String
 }
 
 class ResumeViewerPresenter: ResumeViewerPresenterLogic {
-    
     private weak var viewController : ResumeViewerViewControllerDisplay!
     
     
@@ -114,6 +114,11 @@ class ResumeViewerPresenter: ResumeViewerPresenterLogic {
     func presentError(error: NetworkError) {
         self.viewController.displayError(error.errorMessage)
         
+    }
+    
+    func presentNavigationTitle(resume: ResumeBO, isDisplay : Bool) -> String{
+        if isDisplay { return resume.user.name ?? resume.user.login}
+        return ""
     }
     
     

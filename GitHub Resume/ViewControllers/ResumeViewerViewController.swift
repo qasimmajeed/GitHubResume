@@ -11,6 +11,7 @@ import UIKit
 protocol ResumeViewerViewControllerDisplay : class {
     func displayResume(viewModel : ResumeViewModel!)
     func displayError(_ error : String)
+    func displayNavigationTitle(title : String)
 }
 
 
@@ -87,6 +88,10 @@ class ResumeViewerViewController: UIViewController {
 
 
 extension ResumeViewerViewController : ResumeViewerViewControllerDisplay {
+    func displayNavigationTitle(title: String) {
+        self.navigationItem.title = title
+    }
+    
     func displayResume(viewModel: ResumeViewModel!) {
         self.fake = 5
         self.viewModel = viewModel
@@ -185,11 +190,11 @@ extension ResumeViewerViewController : UITableViewDelegate {
         }else if viewModel.type == .WebSite{
             let cell = tableView.dequeueReusableCell(withIdentifier: "WebSiteTableViewCell") as! WebSiteTableViewCell
             cell.viewModel = self.viewModel.webSiteViewModel
-             cell.accessoryType = .none
+            cell.accessoryType = .none
             if self.viewModel.webSiteViewModel.isClickAble {
-                 cell.accessoryType = .disclosureIndicator
+                cell.accessoryType = .disclosureIndicator
             }
-           
+            
             return cell
             
         }else if viewModel.type == .Repositories {
@@ -207,11 +212,9 @@ extension ResumeViewerViewController : UITableViewDelegate {
         }else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "LanguageUITableViewCell") as! LanguageUITableViewCell
             cell.viewModel = self.viewModel.languageViewModels[indexPath.row]
-    
+            
             return cell
         }
-        
-        //RepoMainUITableViewCell
         
     }
     
@@ -223,7 +226,7 @@ extension ResumeViewerViewController : UITableViewDelegate {
             
             
         }else  if viewModel.type == .GitProfile {
-           
+            
             
         }else if viewModel.type == .WebSite{
             if self.viewModel.webSiteViewModel.isClickAble {
@@ -233,16 +236,32 @@ extension ResumeViewerViewController : UITableViewDelegate {
             
         }else if viewModel.type == .Repositories {
             self.router.openUrl(self.viewModel.repoViewModels[indexPath.row].link)
-           
+            
             
         }else if viewModel.type == .Organizations{
             self.router.openUrl(self.viewModel.organizarionViewModels[indexPath.row].url)
             
         }else {
-           
+            
         }
         
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let viewModel : ResumeViewModel.SectionViewModel = self.viewModel.sectionViewModels[indexPath.section]
+        if viewModel.type == .UserInfo {
+            self.navigationItem.title = self.interactor.getHeadertitle(false)
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let viewModel : ResumeViewModel.SectionViewModel = self.viewModel.sectionViewModels[indexPath.section]
+        if viewModel.type == .UserInfo {
+            self.navigationItem.title = self.interactor.getHeadertitle(true)
+            
+        }
+        
+    }
 }
 

@@ -9,8 +9,8 @@
 import Foundation
 
 protocol ResumeViewerInteractorInput {
-    
     func fetchUserResume(_ userName : String)
+    func getHeadertitle(_ isDisplay : Bool) -> String
 }
 
 protocol ResumeViewerInteractorDataStore
@@ -70,6 +70,12 @@ class ResumeViewerInteractor: ResumeViewerInteractorInput, ResumeViewerInteracto
         }) { [weak self](error) in
             if let weakSelf = self { weakSelf.presenter.presentError(error: error!) }
         }
+        
+    }
+    
+    
+    func getHeadertitle(_ isDisplay : Bool) -> String{
+        self.presenter.presentNavigationTitle(resume:self.resume , isDisplay: isDisplay)
         
     }
     
