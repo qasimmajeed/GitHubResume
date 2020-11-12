@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD112A3C2389DB6600E49CA2 /* GitHubResumeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */; };
+		FD3F1A33255D31A800F5D5DE /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3F1A32255D31A800F5D5DE /* AsyncImage.swift */; };
 		FDF0D454238676D1002854DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D453238676D1002854DB /* AppDelegate.swift */; };
 		FDF0D45B238676D1002854DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D459238676D1002854DB /* Main.storyboard */; };
 		FDF0D45D238676D3002854DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D45C238676D3002854DB /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubResumeRouter.swift; sourceTree = "<group>"; };
+		FD3F1A32255D31A800F5D5DE /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		FDF0D450238676D1002854DB /* GitHub Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF0D453238676D1002854DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF0D45A238676D1002854DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD3F1A30255D318A00F5D5DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD3F1A31255D31A800F5D5DE /* Controls */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD3F1A31255D31A800F5D5DE /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				FD3F1A32255D31A800F5D5DE /* AsyncImage.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		FDF0D447238676D1002854DB = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +169,7 @@
 				FDF0D4AC238736E5002854DB /* VIews */,
 				FDF0D4A32387159B002854DB /* ViewControllers */,
 				FDF0D48D2386AA3F002854DB /* Extension */,
+				FD3F1A30255D318A00F5D5DE /* Helpers */,
 				FDF0D47523867756002854DB /* NetworkApi */,
 				FDF0D459238676D1002854DB /* Main.storyboard */,
 				FDF0D45C238676D3002854DB /* Assets.xcassets */,
@@ -426,6 +445,7 @@
 				FDF0D47D23867756002854DB /* HttpMethod.swift in Sources */,
 				FDF0D4B82387436C002854DB /* RepositoryUITableViewCell.swift in Sources */,
 				FDF0D4C32389B5FB002854DB /* OrganizationUITableViewCell.swift in Sources */,
+				FD3F1A33255D31A800F5D5DE /* AsyncImage.swift in Sources */,
 				FDF0D47E23867756002854DB /* NetworkApi.swift in Sources */,
 				FDF0D486238677EC002854DB /* UserRemoteRepository.swift in Sources */,
 				FDF0D47C23867756002854DB /* WebServiceApi.swift in Sources */,

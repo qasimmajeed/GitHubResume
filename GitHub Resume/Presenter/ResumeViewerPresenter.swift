@@ -28,7 +28,8 @@ class ResumeViewerPresenter: ResumeViewerPresenterLogic {
         
         //View binding for User Information
         resumeViewModel.sectionViewModels.append(ResumeViewModel.SectionViewModel(title: "", sectionCount: 1, type: .UserInfo))
-        resumeViewModel.userInfoViewModel = ResumeViewModel.UserInfoViewModel(userName: resume.user.name ?? "", caption: "Passionate GitHub user")
+        resumeViewModel.userInfoViewModel = ResumeViewModel.UserInfoViewModel(userName: resume.user.name ?? "", caption: "Passionate GitHub user",avatarUrlString: resume.user.avatarURL)
+        
         
         
         

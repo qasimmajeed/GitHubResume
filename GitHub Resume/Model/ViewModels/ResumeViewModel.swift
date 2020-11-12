@@ -39,6 +39,7 @@ struct ResumeViewModel {
     struct UserInfoViewModel {
         var userName : String!
         var caption : String!
+        var avatarUrlString : String?
         
     }
     
