@@ -245,51 +245,51 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserInfoTableViewCell" id="1ca-kd-PXF" customClass="UserInfoTableViewCell" customModule="GitHub_Resume" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="582" width="414" height="86"/>
+                                        <rect key="frame" x="0.0" y="582" width="414" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ca-kd-PXF" id="drK-t1-YJk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="piF-a8-xtb">
-                                                    <rect key="frame" x="10" y="0.0" width="394" height="76"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="piF-a8-xtb">
+                                                    <rect key="frame" x="10" y="0.0" width="394" height="145"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enu-Gc-OOl">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="76"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2h-6N-GHW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="70"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ber-Mr-oQK" customClass="AsyncImage" customModule="GitHub_Resume" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="5" width="50" height="50"/>
+                                                                    <rect key="frame" x="162" y="0.0" width="70" height="70"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="50" id="PPT-0J-bvq"/>
-                                                                        <constraint firstAttribute="width" secondItem="ber-Mr-oQK" secondAttribute="height" multiplier="1:1" id="kFj-Ir-rmk"/>
+                                                                        <constraint firstAttribute="width" secondItem="ber-Mr-oQK" secondAttribute="height" id="TlS-mX-7aC"/>
+                                                                        <constraint firstAttribute="width" constant="70" id="ead-zb-Gmp"/>
                                                                     </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="ber-Mr-oQK" firstAttribute="top" secondItem="Enu-Gc-OOl" secondAttribute="top" constant="5" id="V7o-9s-eUL"/>
-                                                                <constraint firstItem="ber-Mr-oQK" firstAttribute="leading" secondItem="Enu-Gc-OOl" secondAttribute="leading" id="VkO-bC-cX8"/>
-                                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ber-Mr-oQK" secondAttribute="bottom" id="ZJL-ay-Vuj"/>
-                                                                <constraint firstAttribute="trailing" secondItem="ber-Mr-oQK" secondAttribute="trailing" id="coa-FM-WCn"/>
+                                                                <constraint firstItem="ber-Mr-oQK" firstAttribute="centerX" secondItem="I2h-6N-GHW" secondAttribute="centerX" id="BZ5-zW-y3Y"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ber-Mr-oQK" secondAttribute="bottom" id="MPq-ZU-DrE"/>
+                                                                <constraint firstItem="ber-Mr-oQK" firstAttribute="top" secondItem="I2h-6N-GHW" secondAttribute="top" id="iv1-XN-pio"/>
                                                             </constraints>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sEe-Hq-prM">
-                                                            <rect key="frame" x="62" y="0.0" width="332" height="76"/>
+                                                            <rect key="frame" x="0.0" y="70" width="394" height="75"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Chris Wanstrath" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRC-L7-oge">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="332" height="35"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Chris Wanstrath" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRC-L7-oge">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="35"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Passionate GitHub user" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFh-Jn-Chb">
-                                                                    <rect key="frame" x="0.0" y="40" width="332" height="14.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Passionate GitHub user" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFh-Jn-Chb">
+                                                                    <rect key="frame" x="0.0" y="40" width="394" height="14.5"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Passionate GitHub user" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htd-j3-en0">
-                                                                    <rect key="frame" x="0.0" y="59.5" width="332" height="16.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Passionate GitHub user" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htd-j3-en0">
+                                                                    <rect key="frame" x="0.0" y="59.5" width="394" height="15.5"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
