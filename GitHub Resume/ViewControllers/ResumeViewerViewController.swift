@@ -30,7 +30,7 @@ class ResumeViewerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.activityIndicator.isHidden = true
+        self.activityIndicator.isHidden = false
         self.fetcData()
         
         // Do any additional setup after loading the view.
