@@ -28,13 +28,13 @@ class ResumeViewerPresenter: ResumeViewerPresenterLogic {
         
         //View binding for User Information
         resumeViewModel.sectionViewModels.append(ResumeViewModel.SectionViewModel(title: "", sectionCount: 1, type: .UserInfo))
-        resumeViewModel.userInfoViewModel = ResumeViewModel.UserInfoViewModel(userName: resume.user.name ?? "", caption: "Passionate GitHub user",avatarUrlString: resume.user.avatarURL)
+        resumeViewModel.userInfoViewModel = ResumeViewModel.UserInfoViewModel(userName: resume.user.name ?? resume.user.login, caption: "Passionate GitHub user",avatarUrlString: resume.user.avatarURL)
         
         
         
         
         //View binding for Git Profile
-        var profileText = "On GitHub since \(resume.user.createdAt.getDateSperated().year), \(resume.user.name ?? "")"
+        var profileText = "On GitHub since \(resume.user.createdAt.getDateSperated().year), \(resume.user.name ?? resume.user.login ?? "")"
         if String.isStringValid(resume.user.location){
             profileText += " is a developer based in \(resume.user.location!)"
         }else {
