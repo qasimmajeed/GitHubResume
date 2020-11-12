@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD112A3C2389DB6600E49CA2 /* GitHubResumeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */; };
 		FD3F1A33255D31A800F5D5DE /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3F1A32255D31A800F5D5DE /* AsyncImage.swift */; };
+		FD3F1A6A255D3CB800F5D5DE /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3F1A69255D3CB800F5D5DE /* UITextField+Extension.swift */; };
 		FDF0D454238676D1002854DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF0D453238676D1002854DB /* AppDelegate.swift */; };
 		FDF0D45B238676D1002854DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D459238676D1002854DB /* Main.storyboard */; };
 		FDF0D45D238676D3002854DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF0D45C238676D3002854DB /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		FD112A3B2389DB6600E49CA2 /* GitHubResumeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubResumeRouter.swift; sourceTree = "<group>"; };
 		FD3F1A32255D31A800F5D5DE /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		FD3F1A69255D3CB800F5D5DE /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		FDF0D450238676D1002854DB /* GitHub Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF0D453238676D1002854DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF0D45A238676D1002854DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				FDF0D4A8238717C5002854DB /* UIViewController+Extension.swift */,
 				FDF0D4BC2389603A002854DB /* Date+Extension.swift */,
 				FDF0D4C02389682B002854DB /* String+Extension.swift */,
+				FD3F1A69255D3CB800F5D5DE /* UITextField+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				FDF0D4A223871151002854DB /* ResumeViewerPresenter.swift in Sources */,
 				FD112A3C2389DB6600E49CA2 /* GitHubResumeRouter.swift in Sources */,
 				FDF0D4A9238717C5002854DB /* UIViewController+Extension.swift in Sources */,
+				FD3F1A6A255D3CB800F5D5DE /* UITextField+Extension.swift in Sources */,
 				FDF0D4BD2389603A002854DB /* Date+Extension.swift in Sources */,
 				FDF0D497238704DB002854DB /* OrganizationRemoteRepository.swift in Sources */,
 				FDF0D4C12389682B002854DB /* String+Extension.swift in Sources */,
