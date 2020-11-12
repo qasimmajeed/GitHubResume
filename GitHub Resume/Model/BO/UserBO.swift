@@ -29,6 +29,7 @@ class UserBO: BaseBO {
     var publicGists : Int64!
     var followers : Int64!
     var following: Int64!
+    var bio: String?
    
     
     
@@ -55,6 +56,7 @@ class UserBO: BaseBO {
         case publicGists = "public_gists"
         case followers = "followers"
         case following = "following"
+        case bio = "bio"
         
         
         
@@ -153,6 +155,10 @@ class UserBO: BaseBO {
         
         if let elementValue = try? values.decode(Int64.self, forKey: .following) {
             following = elementValue
+        }
+        
+        if let elementValue = try? values.decode(String.self, forKey: .bio) {
+            bio = elementValue
         }
         
         

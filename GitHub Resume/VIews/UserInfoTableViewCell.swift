@@ -12,7 +12,9 @@ class UserInfoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userNameLabel : UILabel!
     @IBOutlet weak var captionLabel : UILabel!
+    @IBOutlet weak var bioLabel : UILabel!
     @IBOutlet weak var profileImageView : AsyncImage!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,6 +40,8 @@ class UserInfoTableViewCell: UITableViewCell {
                 
                 return
             }
+            self.bioLabel.text = viewModel.bio
+            self.bioLabel.isHidden = !viewModel.haveBio
             self.profileImageView.loadUrl(URL(string: avatarString)!)
             
             

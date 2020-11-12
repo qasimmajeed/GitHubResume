@@ -40,6 +40,10 @@ struct ResumeViewModel {
         var userName : String!
         var caption : String!
         var avatarUrlString : String?
+        var bio : String?
+        var haveBio : Bool {
+            return !(self.bio?.isEmpty ?? true)
+        }
         
     }
     

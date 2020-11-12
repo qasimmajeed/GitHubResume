@@ -243,5 +243,6 @@ extension ResumeViewerViewController : UITableViewDelegate {
         }
         
     }
+    
 }
 
